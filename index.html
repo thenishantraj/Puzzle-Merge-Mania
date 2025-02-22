@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Merge Mania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Puzzle Merge Mania</h1>
+        <div class="stats">
+            <p>Score: <span id="score">0</span> / Goal: <span id="goal">100</span></p>
+            <p>Level: <span id="level">1</span></p>
+            <p>Hammer: <span id="hammer-count">1</span> | Undo: <span id="undo-count">1</span></p>
+        </div>
+        <div class="grid" id="grid"></div>
+        <div class="controls">
+            <button onclick="moveTiles('right')">Move Right</button>
+            <button onclick="useUndo()" id="undo-btn">Undo</button>
+            <button onclick="addHammer()">Watch Ad (Hammer)</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
